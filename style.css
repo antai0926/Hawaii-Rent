@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+header {
+  display: flex;
+  /* background-color: aqua; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+
+header div.logo {
+  display: flex;
+  align-items: center;
+  /* background-color: blue; */
+}
+
+header div.logo img {
+  width: 5rem;
+}
+
+header nav ul {
+  display: flex;
+  /* background-color: blueviolet; */
+  align-items: center;
+  list-style-type: none;
+}
+
+header nav ul li {
+  margin: 1rem;
+}
+
+header nav ul a {
+  text-decoration-line: none;
+  color: rgb(36, 80, 65);
+  font-size: 1.2rem;
+}
+
+header nav ul a img {
+  width: 2.5rem;
+}
+
+section {
+  background-image: url(./Pictures/pexels-photo-416676.jpeg);
+  /* width: 100vw; */
+  /* height: 60vh; */
+  min-height: 90vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+section h2 {
+  font-weight: 500;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+section a {
+  text-decoration-line: none;
+  color: white;
+  background-color: rgb(24, 150, 189);
+  padding: 1rem 1.5rem;
+  border-radius: 10%;
+  z-index: 5;
+}
+
+section .blackFront {
+  background-color: rgba(0, 0, 0, 0.199);
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 100vw;
+  min-height: 90vh;
+}
