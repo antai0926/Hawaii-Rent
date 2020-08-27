@@ -42,7 +42,7 @@ header nav ul a img {
   width: 2.5rem;
 }
 
-section {
+section.imageSection {
   background-image: url(./Pictures/pexels-photo-416676.jpeg);
   min-height: 90vh;
   background-size: cover;
@@ -54,7 +54,7 @@ section {
   z-index: 0;
 }
 
-section h2 {
+section.imageSection h2 {
   font-weight: 500;
   color: white;
   font-size: 2.5rem;
@@ -62,7 +62,7 @@ section h2 {
   margin-bottom: 2rem;
 }
 
-section a {
+section.imageSection a {
   text-decoration-line: none;
   color: white;
   background-color: rgb(24, 150, 189);
@@ -70,14 +70,59 @@ section a {
   border-radius: 1rem;
 }
 
-section .blackFront {
+section.imageSection .blackFront {
   background-color: rgba(0, 0, 0, 0.199);
   position: absolute;
   left: 0;
   top: 0;
-  width: 100vw;
+  width: 100%;
   height: 90vh;
   z-index: -1;
+}
+
+section.secondPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 4rem;
+  min-height: 100vh;
+}
+
+section.secondPart h3 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: normal;
+}
+
+section.secondPart h3 span.green {
+  color: #12948c;
+}
+
+section.secondPart .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.secondPart .cards .card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  margin: 3rem;
+  padding: 2rem;
+  text-align: center;
+  flex-basis: 20rem;
+}
+
+section.secondPart .cards .card h5 {
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: normal;
+}
+
+section.secondPart .cards .card img {
+  width: 10vw;
+  height: 10vw;
 }
 
 @media screen and (max-width: 910px) {
@@ -90,9 +135,18 @@ section .blackFront {
   header nav ul li {
     margin: 0.5rem;
   }
+  section.secondPart .cards .card {
+    padding: 0;
+  }
+  section.secondPart {
+    padding: 1rem;
+  }
 }
 
 @media screen and (max-width: 455px) {
+  header {
+    flex-direction: column;
+  }
   header nav ul {
     flex-direction: column;
   }
@@ -100,6 +154,9 @@ section .blackFront {
     width: 15vw;
   }
   header h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+  section.imageSection h2 {
+    font-size: 2rem;
   }
 }
