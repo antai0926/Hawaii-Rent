@@ -171,6 +171,50 @@ section.thirdPart .intro p {
   font-weight: normal;
 }
 
+section.fourthPart {
+  background-color: rgb(211, 208, 208);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+section.fourthPart .logo {
+  display: flex;
+  align-items: center;
+}
+
+section.fourthPart .logo img {
+  width: 5rem;
+}
+
+section.fourthPart nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+section.fourthPart nav ul li {
+  padding: 1rem;
+}
+
+section.fourthPart nav ul li a {
+  text-decoration-line: none;
+  color: white;
+  font-size: 2rem;
+}
+
+section.fourthPart .icons img {
+  width: 4rem;
+  margin: 0 2rem;
+  cursor: pointer;
+}
+
+section.fourthPart h3 {
+  color: white;
+  margin-top: 1.5rem;
+}
+
 @media screen and (max-width: 1200px) {
   section.thirdPart {
     flex-direction: column;
@@ -202,10 +246,12 @@ section.thirdPart .intro p {
   header nav ul {
     flex-direction: column;
   }
-  header div.logo img {
+  header div.logo img,
+  section.fourthPart .logo img {
     width: 15vw;
   }
-  header h1 {
+  header h1,
+  section.fourthPart .logo h1 {
     font-size: 1.4rem;
   }
   section.imageSection h2 {
